@@ -1,7 +1,6 @@
 class SignupsController < ApplicationController
   def create
-    @user = User.new(
-                     username: params["username"],
+    @user = User.new(username: params["username"],
                      password: params["password"])
     if @user.save
       render json: { user: @user.as_json(only: [:username, :password]) },
