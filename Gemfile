@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+# Add CORS support so frontend can frontend use our lovely API.
+gem 'rack-cors', require: "rack/cors"
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -47,4 +50,3 @@ group :development do
   gem 'rails_12factor'
 
 end
-
