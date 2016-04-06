@@ -1,7 +1,7 @@
 class UserController <ApplicationController
   before_action :authenticate!, only: [:check_auth]
 
-  def login
+ def login
     @user = User.find_by!(username: params["username"])
     if @user.authenticate(params[:password])
       render json: { @user.as_json(only:[:username, :acces_token]) },
