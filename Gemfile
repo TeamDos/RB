@@ -29,6 +29,11 @@ gem 'bcrypt', '~> 3.1.7'
 # Add CORS support so frontend can frontend use our lovely API.
 gem 'rack-cors', require: "rack/cors"
 
+# Add aws-sdk for comm with AWS S3
+gem 'aws-sdk', '< 2.0'
+
+# add paperclip for managing attachments
+gem 'paperclip'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -38,6 +43,11 @@ gem 'rack-cors', require: "rack/cors"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'pry'
+
+  gem 'dotenv-rails'
+
 end
 
 group :development do
