@@ -1,9 +1,8 @@
-class PostsController < ApplicationController
+class ImageController < ApplicationController
   before_action :authneticate!, only: [:create]
 
   def create
-    @post = current_user.posts.create(category: params["category"],
-                                              image: params["file"])
+    @post = current_user.posts.create(img: params["img"], caption: params["caption"])
     if @psot.save
       render json: {post: @post}, status: :created
     else
