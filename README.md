@@ -80,4 +80,6 @@ This logs in your user
   	* img: <image file>
   	* caption: string
 
-  	* header: Auth_Token
+  	* header: Auth-Token
+
+  Returns 201 Created on Success and 422 Unprocessable Entity if fail.
