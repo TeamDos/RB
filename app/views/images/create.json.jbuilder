@@ -1,3 +1,3 @@
 # json.user @images.user, :username, :password
-# json.image @images.image_url
-# json.caption @images.caption
+# json.url @images.img.url
+# json.image @images.img.caption
