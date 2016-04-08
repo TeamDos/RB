@@ -2,7 +2,7 @@ class ImagesController < ApplicationController
   before_action :authenticate!, only: [:create]
 
   def create
-    # binding.pry
+    binding.pry
     @image = current_user.images.create(img: params["img"], 
                                         caption: params["caption"])
     if @image.save
