@@ -1,4 +1,4 @@
-# json.user @images.user, :username, :password
-# json.create @images.create, :caption, :url
-# json.url @images.img.url
-# json.image @images.img.caption
+# json.user @image.user, :username, :password
+# json.create @image.create, :caption, :url
+# json.url @image.img.url
+# json.image @image.img.caption
