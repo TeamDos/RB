@@ -5,7 +5,7 @@ class SignupsController < ApplicationController
 
     @user.ensure_auth_token  
     if @user.save
-      render json: { user: @user.as_json(only: [:username, :password, :auth_token]) }, status: :created
+      render json: { user: @user.as_json(only: [:id, :username, :password, :auth_token]) }, status: :created
       
            
     else

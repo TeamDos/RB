@@ -44,3 +44,40 @@ This creates a new user
    }
  }
  ```
+#### POST /login
+This logs in your user
+ Params:
+ 	* username: string
+ 	* password: string
+
+ 	* header: Auth-Token
+
+ Returns 200 OK on Success and 401 Unauthorized if no user found or incorrect user data.
+ 
+ **Request:**
+
+ ```
+ {
+ 	"username": "dane"
+    "password": "bongo"
+ }
+ ```
+
+ **Response:**
+
+ ```
+ {
+   "user": {
+    "username": "dane",
+      "auth_token": "7774743beeb3c26dfdd80213ba1b9097"
+   }
+ }
+ ```
+ #### POST /images
+ This allows image uploads
+  Params:
+  	
+  	* img: <image file>
+  	* caption: string
+
+  	* header: Auth_Token
