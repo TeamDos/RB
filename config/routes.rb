@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   post "login", to: "user#login"
   post "auth/test", to: "users#check_auth"
   post "images", to: "images#create"
+  get "images", to: "images#show"
   # Example resource route with options:
   #   resources :products do
   #     member do
