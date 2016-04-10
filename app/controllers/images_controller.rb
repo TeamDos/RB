@@ -17,7 +17,7 @@ class ImagesController < ApplicationController
   def index
     @images = Image.all
     # @users = User.all
-    render "create.json.jbuilder", status: :ok
+    # render "create.json.jbuilder", status: :ok
   end
 
 end 
