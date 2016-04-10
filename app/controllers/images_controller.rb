@@ -17,7 +17,7 @@ class ImagesController < ApplicationController
   def index
     @images = Image.all
     # @users = User.all
-    render json: {image: @image, url: @image.img.url }, status: :ok
+    render "create.json.jbuilder", status: :ok
   end
 
 end 
