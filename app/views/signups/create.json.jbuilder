@@ -1,4 +1,4 @@
 json.user do
-  json.user_name @user.user_name
+  json.username @user.username
   json.auth @user.auth_token
 end
