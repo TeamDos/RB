@@ -15,9 +15,9 @@ class ImagesController < ApplicationController
   end
 
   def index
-    @image = @image.all
+    @images = Image.all
     # render json: {image: @image, url: @image.img.url }, status: :ok
-    respond_with(@image)
+    respond_with(@images)
   end
 
 end 
