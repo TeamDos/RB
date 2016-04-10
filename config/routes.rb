@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   #   resources :products
   post "signups", to: "signups#create"
   post "login", to: "user#login"
-  post "auth/test", to: "users#check_auth"
+  post "auth/login", to: "user#check_auth"
   post "images", to: "images#create"
   get "images", to: "images#index"
   # Example resource route with options:
