@@ -13,4 +13,10 @@ class ImagesController < ApplicationController
       render json: {errors: @image.errors.full_messages}, status: :unprocessable_entity
     end
   end
+
+  def index
+    @image = Image.all
+    respond_with(@image)
+  end
+
 end 
