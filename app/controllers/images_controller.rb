@@ -4,7 +4,8 @@ class ImagesController < ApplicationController
   def create
     # binding.pry
     @image = current_user.images.create(img: params["img"], 
-                                        caption: params["caption"])
+                                        caption: params["caption"],
+                                        country: params["country"])
     if @image.save
       render json: {image: @image, url: @image.img.url }, status: :created
       # render "create.json.jbuilder", status: :created
