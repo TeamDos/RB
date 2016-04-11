@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160411180244) do
+ActiveRecord::Schema.define(version: 20160411182835) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20160411180244) do
     t.string   "country"
   end
 
-  create_table "leaderboard", force: :cascade do |t|
+  create_table "leaderboards", force: :cascade do |t|
     t.string  "username"
     t.integer "score"
   end

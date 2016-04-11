@@ -3,7 +3,7 @@ class LeaderboardsController < ApplicationController
 	def create
 	  @leaderboard = Leaderboard.new(username: params["username"],
 	  	                             score: params["score"])
-
+binding.pry
 	  if @leaderboard.save
 	  	render "create.json.jbuilder", status: :created
 
@@ -14,7 +14,7 @@ class LeaderboardsController < ApplicationController
     end
   	
   	def index
-    	@images = Image.all
+    	@leaderboard = Leaderboard.all
     	# @users = User.all
     	render "create.json.jbuilder", status: :ok
   	end
