@@ -10,6 +10,7 @@ class LeaderboardController < ApplicationController
 	  else
       render json: { errors: @user.errors.full_messages },
              status: :unprocessable_entity
+      end
     end
   	
   	def index
@@ -17,5 +18,5 @@ class LeaderboardController < ApplicationController
     	# @users = User.all
     	render "create.json.jbuilder", status: :ok
   	end
-  end
+
 end
