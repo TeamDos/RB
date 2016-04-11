@@ -17,4 +17,5 @@ class LeaderboardController < ApplicationController
     	# @users = User.all
     	render "create.json.jbuilder", status: :ok
   	end
+  end
 end
