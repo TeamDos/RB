@@ -1,4 +1,4 @@
-class LeaderboardController < ApplicationController
+class LeaderboardsController < ApplicationController
 
 	def create
 	  @leaderboard = Leaderboard.new(username: params["username"],
