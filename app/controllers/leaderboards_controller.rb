@@ -3,7 +3,7 @@ class LeaderboardsController < ApplicationController
 	def create
 	  @leaderboard = Leaderboard.new(username: params["username"],
 	  	                             score: params["score"])
-binding.pry
+
 	  if @leaderboard.save
 	  	render "create.json.jbuilder", status: :created
 
