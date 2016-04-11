@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   post "auth/login", to: "user#check_auth"
   post "images", to: "images#create"
   get "images/index", to: "images#index"
+  post "gamedata", to: "gamedata#create"
+  get "gamedata/index", to: "gamedata#index"
   # Example resource route with options:
   #   resources :products do
   #     member do
