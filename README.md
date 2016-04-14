@@ -89,7 +89,8 @@
 
     Returns 201 Created on Success and 422 Unprocessable Entity if fail.
 
-   #### POST /leaderboards
+#### POST /leaderboards
+
     This sends and saves the user's score to the database
      Params:
      	* username: string
