@@ -18,8 +18,8 @@ Rails.application.routes.draw do
   post "auth/login", to: "user#check_auth"
   post "images", to: "images#create"
   get "images/index", to: "images#index"
-  post "leaderboard", to: "leaderboard#create"
-  get "leaderboard/index", to: "leaderboard#index"
+  post "leaderboards", to: "leaderboards#create"
+  get "leaderboards/index", to: "leaderboards#index"
   # Example resource route with options:
   #   resources :products do
   #     member do

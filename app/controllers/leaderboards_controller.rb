@@ -16,7 +16,7 @@ class LeaderboardsController < ApplicationController
   	def index
     	@leaderboards = Leaderboard.all
     	# @users = User.all
-    	render "create.json.jbuilder", status: :ok
+    	render "index.json.jbuilder", status: :ok
   	end
 
 end
