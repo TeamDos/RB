@@ -2,22 +2,23 @@
 
  Welcome to bongo, a game of guessing places given an image.
 
- ## General Rules
+## General Rules
 
- ### Authorization
+### Authorization
 
  All authorized requests unless otherwise mentioned require
  an "**Auth-Token**" header to be present. Users are assigned an
  Auth Token during account creation.
 
- ### Errors
+### Errors
 
  Any request that fails to be processed will contain an "errors"
  key in the returned JSON describing the problem.
 
- ## Routes
+## Routes
 
-  #### POST /signups
+#### POST /signups
+
   This creates a new user
   Params:
     * username: string
@@ -44,7 +45,9 @@
     }
   }
   ```
-  #### POST /login
+
+#### POST /login
+
   This logs in your user
    Params:
    	* username: string
@@ -73,7 +76,9 @@
      }
    }
    ```
-   #### POST /images
+
+#### POST /images
+
    This allows image uploads
     Params:
 
