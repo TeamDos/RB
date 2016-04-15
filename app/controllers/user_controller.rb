@@ -21,4 +21,13 @@ class UserController <ApplicationController
               status: :unauthorized
     end
   end
+  # def update
+  #   @user = current_user.users.new(username: params["title"],
+  #                                  password: params["password"])
+  #    if @user.save
+  #       render "create.json.jbuilder", status: :created
+  #    else
+  #       render json: {errors: @image.errors.full_messages}, status: :unprocessable_entity
+  #    end
+  # end
 end
