@@ -14,11 +14,7 @@ class LeaderboardsController < ApplicationController
     end
 
   	def index
-<<<<<<< HEAD
     	@leaderboards = Leaderboard.all
-=======
-    	@leaderboard = Leaderboard.all
->>>>>>> master
     	# @users = User.all
     	render "index.json.jbuilder", status: :ok
   	end
