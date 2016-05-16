@@ -1,1 +1,1 @@
-json.image @image, :img.url, :caption, :country
+json.image @image, :img, :caption, :country
