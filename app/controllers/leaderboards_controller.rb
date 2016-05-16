@@ -12,11 +12,11 @@ class LeaderboardsController < ApplicationController
              status: :unprocessable_entity
       end
     end
-  	
+
   	def index
-    	@leaderboard = Leaderboard.all
+    	@leaderboards = Leaderboard.all
     	# @users = User.all
-    	render "create.json.jbuilder", status: :ok
+    	render "index.json.jbuilder", status: :ok
   	end
 
 end
